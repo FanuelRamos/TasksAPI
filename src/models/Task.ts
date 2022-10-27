@@ -8,7 +8,7 @@ export class Task {
   public finish: Date;
 
   constructor(props: Omit<Task, 'id'>, id?: string) {
-    Object.assign(this, props)ç
+    Object.assign(this, props);
 
     if (!id) {
       this.id = uuidV4();
