@@ -7,8 +7,8 @@
 # Run the Project
 * Clone The Project On GitHub
 * Open The Project Folder on a CLI Ambient
-* Run the command "npm install" to install all dependences
-* Run "npm dev" To run the the Project
+* Run the command "yarn install" to install all dependences
+* Run "yarn dev" To run the the Project
 - Now You're good to go
 
 # Use The Project
