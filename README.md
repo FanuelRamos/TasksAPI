@@ -1,7 +1,7 @@
 # TasksAPI
 
 * This is an API allows you to manage tasks
-* Pritice the Clean Achitecture consepts [SOLID] was the big motivation to do this project! 
+* Pritice the Clean Achitecture concepts [SOLID] was the big motivation to do this project! 
 * NodeJS, TypeScript and MongoDB was the stacks choosed to this journey
 
 # Run the Project
