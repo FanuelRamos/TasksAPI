@@ -1,25 +1,30 @@
 import { Router } from "express";
+import { createTaskController } from "../useCases/CreateTask";
+import { deleteTaskController } from "../useCases/DeleteTask";
+import { getSingleTaskController } from "../useCases/GetSingleTask";
+import { listTasksController } from "../useCases/ListTasks";
+import { updateTaskController } from "../useCases/UpdateTask";
 
 const router = Router();
 
 router.get('/', (request, response) => {
-  return response.status(200).json({ msg: 'Get All Tasks' });
+  return listTasksController.handle(request, response);
 })
 
 router.post('/', (request, response) => {
-  return response.status(200).json({ msg: 'Create a Task' });
+  return createTaskController.handle(request, response);
 })
 
 router.get('/:id', (request, response) => {
-  return response.status(200).json({ msg: 'Get A Single Task' });
+  return getSingleTaskController.handle(request, response);
 })
 
-router.patch('/:id', (request, response) => {
-  return response.status(200).json({ msg: 'Update A Task' });
+router.put('/:id', (request, response) => {
+  return updateTaskController.handle(request, response);
 })
 
 router.delete('/:id', (request, response) => {
-  return response.status(200).json({ msg: 'Delete A Task' });
+  return deleteTaskController.handle(request, response);
 })
 
 export { router }
