@@ -1,11 +1,11 @@
 {
   "name": "TasksAPI",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/server.ts",
   "author": "Fanuel Ramos <fanuelramos111@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ingnore-watch node_modules --respawn src/server.ts"
+    "dev": "ts-node-dev --transpile-only --respawn src/server.ts"
   },
   "dependencies": {
     "@types/mongoose": "^5.11.97",
