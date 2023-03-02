@@ -8,6 +8,11 @@ export class UpdateTaskUseCase {
   async execute(data: IUpdateTaskRequestDTO): Promise<Task> {
     let task = new Task(data, data.id)
 
+    const taskExists = await this.taskRepository.findById(data.id);
+    if(!taskExists) {
+      throw new Error(`Could not find task`)
+    }
+
     task = await this.taskRepository.update(task);
 
     return task
