@@ -5,7 +5,7 @@
   "author": "Fanuel Ramos <fanuelramos111@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node ./dist/server.js",
     "build": "rimraf dist && tsc",
     "dev": "ts-node-dev --transpile-only --respawn src/server.ts",
     "test": "jest"
